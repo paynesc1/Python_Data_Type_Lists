@@ -1,16 +1,16 @@
 # generate random list of numbers
-import random
-def randoms():
-    # make list n long, must be at least digits ling
-    my_num = random.randint(2,20)
-    rand_list = []
-    for i in range(my_num):
-        # items in list randonly chosen between 1-5
-        n = random.randint(1,5)
-        rand_list.append(n)
-    return rand_list
-result = randoms()
-print(result)
+# import random
+# def randoms():
+#     # make list n long, must be at least digits ling
+#     my_num = random.randint(2,20)
+#     rand_list = []
+#     for i in range(my_num):
+#         # items in list randonly chosen between 1-5
+#         n = random.randint(1,5)
+#         rand_list.append(n)
+#     return rand_list
+# result = randoms()
+# print(result)
 
 
 
@@ -55,10 +55,24 @@ print(result)
 # Sample List : ['abc', 'xyz', 'aba', '1221']
 # Expected Result : 2
 
-def count_strings(list):
-    count = 0
-    for word in list:
-        if len(word) > 1 and word[0] == word[-1]:
-            count += 1
-    return count
-print(count_strings(['abc', 'xyz', 'aba', '1221']))
+# def count_strings(list):
+#     count = 0
+#     for word in list:
+#         if len(word) > 1 and word[0] == word[-1]:
+#             count += 1
+#     return count
+# print(count_strings(['abc', 'xyz', 'aba', '1221']))
+
+
+# 6. Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
+# Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+# Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
+
+def last(n):
+    return n[-1]
+
+def get_list(list):
+    sorted_list = sorted(list, key=last)
+    return sorted_list
+print(get_list([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+
