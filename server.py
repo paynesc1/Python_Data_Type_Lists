@@ -42,10 +42,23 @@ print(result)
 
 
 # 4. Write a Python program to get the smallest number from a list.
-def smallest(list):
-    smallest = None
-    for i in list:
-        if smallest == None or i < smallest:
-            smallest = i
-    return smallest
-print(smallest(result))
+# def smallest(list):
+#     smallest = None
+#     for i in list:
+#         if smallest == None or i < smallest:
+#             smallest = i
+#     return smallest
+# print(smallest(result))
+
+
+# 5. Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same.
+# Sample List : ['abc', 'xyz', 'aba', '1221']
+# Expected Result : 2
+
+def count_strings(list):
+    count = 0
+    for word in list:
+        if len(word) > 1 and word[0] == word[-1]:
+            count += 1
+    return count
+print(count_strings(['abc', 'xyz', 'aba', '1221']))

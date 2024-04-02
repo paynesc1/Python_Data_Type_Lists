@@ -1,5 +1,5 @@
 # pip install pytest
-from server import smallest
+from server import count_strings
 
 # ***************************************** #
 
@@ -48,13 +48,23 @@ from server import smallest
 # ***************************************** #
 
 # 4. Write a Python program to get the smallest number from a list.
-def test_smallest():
+# def test_smallest():
+#     test_cases = [
+#         ([5, 3, 4, 1, 2], 1),
+#         ([-2, -6, -3, -8, -4], -8),
+#         ([1, 2, 3, 4, 5], 1),
+#         ([5], 5),
+#         ([], None),
+#     ]
+#     for input_list, expected in test_cases:
+#         assert smallest(input_list) == expected, f"Smallest in ({input_list}) should be ({expected})"
+
+
+# ***************************************** #
+def test_count_strings():
     test_cases = [
-        ([5, 3, 4, 1, 2], 1),
-        ([-2, -6, -3, -8, -4], -8),
-        ([1, 2, 3, 4, 5], 1),
-        ([5], 5),
-        ([], None),
+        (['a','b', 'abc'], 0),
+        (['janvjadbsflabdfla','aaaaa'], 1)
     ]
     for input_list, expected in test_cases:
-        assert smallest(input_list) == expected, f"Smallest in ({input_list}) should be ({expected})"
+        assert count_strings(input_list) == expected, f"Number of correct strings in ({input_list}) should be ({expected})"
