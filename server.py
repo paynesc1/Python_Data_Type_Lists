@@ -2,7 +2,7 @@
 import random
 def randoms():
     # make list n long, must be at least digits ling
-    my_num = random.randint(0,20)
+    my_num = random.randint(1,20)
     rand_list = []
     for i in range(my_num):
         # items in list randonly chosen between 1-5
@@ -94,9 +94,19 @@ print(result)
 
 
 # 8. Write a Python program to check if a list is empty or not.
-def empty_list(list):
-    if len(list) == 0:
-        return "List is empty"
-    else:
-        return "List is not empty"
-print(empty_list(result))
+# def empty_list(list):
+#     if len(list) == 0:
+#         return "List is empty"
+#     else:
+#         return "List is not empty"
+# print(empty_list(result))
+
+# 9. Write a Python program to clone or copy a list.
+"""
+    Use result from the randoms() function at the top
+"""
+# def clone(list_):
+#     my_list = list_.copy()
+#     print("The copied list is: ",my_list)
+#     return my_list
+# print(clone(result))
