@@ -1,5 +1,10 @@
 # pip install pytest
-from server import count_strings
+"""
+    depending on the function being checked import that function below
+"""
+from server import randoms, clone
+
+
 
 # ***************************************** #
 
@@ -61,10 +66,25 @@ from server import count_strings
 
 
 # ***************************************** #
-def test_count_strings():
-    test_cases = [
-        (['a','b', 'abc'], 0),
-        (['janvjadbsflabdfla','aaaaa'], 1)
-    ]
-    for input_list, expected in test_cases:
-        assert count_strings(input_list) == expected, f"Number of correct strings in ({input_list}) should be ({expected})"
+
+# 5. Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same.
+# def test_count_strings():
+#     test_cases = [
+#         (['a','b', 'abc'], 0),
+#         (['janvjadbsflabdfla','aaaaa'], 1)
+#     ]
+#     for input_list, expected in test_cases:
+#         assert count_strings(input_list) == expected, f"Number of correct strings in ({input_list}) should be ({expected})"
+
+# ***************************************** #
+
+# 9. Check that the copied list is correct
+# def clone_test():
+#     original_list = randoms()
+#     copied_list = original_list.copy()
+#     if original_list == copied_list:
+#         print("Lists are the same!")
+#     else:
+#         print("Lists are not the same!")
+# clone_test()
+
