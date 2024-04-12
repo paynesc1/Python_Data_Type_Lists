@@ -1,16 +1,30 @@
 # generate random list of numbers
 import random
-def randoms():
-    # make list n long, must be at least digits ling
-    my_num = random.randint(1,20)
-    rand_list = []
-    for i in range(my_num):
-        # items in list randonly chosen between 1-5
-        n = random.randint(1,5)
-        rand_list.append(n)
-    return rand_list
-result = randoms()
-print(result)
+"""
+generates a random list of numbers
+"""
+# def randoms():
+#     # make list n long, must be at least digits ling
+#     my_num = random.randint(1,20)
+#     rand_list = []
+#     for i in range(my_num):
+#         # items in list randonly chosen between 1-5
+#         n = random.randint(1,5)
+#         rand_list.append(n)
+#     return rand_list
+# result = randoms()
+# print(result)
+
+
+"""
+generates a random integer
+for problem #10
+"""
+def random_int():
+    number = random.randint(1,15)
+    return number
+random_integer = random_int()
+# print(random_integer)
 
 
 
@@ -101,6 +115,7 @@ print(result)
 #         return "List is not empty"
 # print(empty_list(result))
 
+
 # 9. Write a Python program to clone or copy a list.
 """
     Use result from the randoms() function at the top
@@ -110,3 +125,24 @@ print(result)
 #     print("The copied list is: ",my_list)
 #     return my_list
 # print(clone(result))
+
+
+
+#10. Write a Python program to find the list of words that are longer than n from a given list of words.
+
+def longer_words(n, my_string):
+    # create empty list for words longer than n
+    word_list = []
+    # get random int from top of program
+    print(f"The random integer is", n)
+    # read words.txt doc
+    for line in my_string:
+        words = line.split()
+        for word in words:
+            if len(word) > n:
+                word_list.append(word)
+    if len(word_list) == 0:
+        print("No words longer than the integer.")   
+    print(word_list)
+fhand = open("words.txt")
+longer_words(random_integer, fhand)
