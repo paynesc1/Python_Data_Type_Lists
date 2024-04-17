@@ -143,6 +143,11 @@ def longer_words(n, my_string):
                 word_list.append(word)
     if len(word_list) == 0:
         print("No words longer than the integer.")   
-    print(word_list)
-fhand = open("words.txt")
-longer_words(random_integer, fhand)
+    print(f"Words longer then {n}:", word_list)
+
+# function to get text frmo file as input to above function
+def get_text():
+    with open("words.txt", 'r') as fhand:
+        return fhand.readlines()
+        
+longer_words(random_integer, get_text())
