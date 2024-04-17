@@ -129,25 +129,27 @@ random_integer = random_int()
 
 
 #10. Write a Python program to find the list of words that are longer than n from a given list of words.
+"""
+    Use result from random_int to get random integer for func parameter
+"""
+# def longer_words(n, my_string):
+#     # create empty list for words longer than n
+#     word_list = []
+#     # get random int from top of program
+#     print(f"The random integer is", n)
+#     # read words.txt doc
+#     for line in my_string:
+#         words = line.split()
+#         for word in words:
+#             if len(word) > n:
+#                 word_list.append(word)
+#     if len(word_list) == 0:
+#         print("No words longer than the integer.")   
+#     print(f"Words longer then {n}:", word_list)
 
-def longer_words(n, my_string):
-    # create empty list for words longer than n
-    word_list = []
-    # get random int from top of program
-    print(f"The random integer is", n)
-    # read words.txt doc
-    for line in my_string:
-        words = line.split()
-        for word in words:
-            if len(word) > n:
-                word_list.append(word)
-    if len(word_list) == 0:
-        print("No words longer than the integer.")   
-    print(f"Words longer then {n}:", word_list)
-
-# function to get text frmo file as input to above function
-def get_text():
-    with open("words.txt", 'r') as fhand:
-        return fhand.readlines()
+# # function to get text frmo file as input to above function
+# def get_text():
+#     with open("words.txt", 'r') as fhand:
+#         return fhand.readlines()
         
-longer_words(random_integer, get_text())
+# longer_words(random_integer, get_text())
