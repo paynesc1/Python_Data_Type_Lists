@@ -2,7 +2,7 @@
 """
     depending on the function being checked import that function below
 """
-from server import randoms, clone
+from server import randoms, common_lists
 
 
 
@@ -88,3 +88,18 @@ from server import randoms, clone
 #         print("Lists are not the same!")
 # clone_test()
 
+# ***************************************** #
+
+#10. Check that the number of words grater than n is correct
+
+# ***************************************** #
+
+# 11. Check if one list has at least one element common to second list
+def common_lists_test():
+    test_cases = [
+        ([1,2,3],[4,5,6], False),
+        ([1],[9,8,7,6,5,4,3,2,1], True)
+    ]
+    for input_list_one, input_list_two, expected in test_cases:
+        result = common_lists(input_list_one, input_list_two)
+        assert result == expected, "Lists return expected correctly."
