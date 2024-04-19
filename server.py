@@ -156,16 +156,25 @@ for problem #10
 
 
 # 11. Write a Python function that takes two lists and returns True if they have at least one common member.
-def common_lists(list_one, list_two):
-    print(list_one)
-    print(list_two)
-    #iterate over one list, if i in the other list return True
-    for i in list_one:
-        if i in list_two:
-            print("True")
-            return True
-    print("False")
-    return False
+# def common_lists(list_one, list_two):
+#     #iterate over one list, if i in the other list return True
+#     for i in list_one:
+#         if i in list_two:
+#             return True
+#     return False
     
-# common_lists(randoms(), randoms())
-common_lists([1,2,3],[1,5,6])
+# # common_lists(randoms(), randoms())
+
+
+# 12. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
+# Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+# Expected Output : ['Green', 'White', 'Black']
+
+def take_away(list_one):
+    print(list_one)
+    if len(list_one) >= 6:
+        list_one.remove(list_one[0])
+        list_one.remove(list_one[4-1])
+        list_one.remove(list_one[5-2])
+    print(list_one)
+take_away(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
