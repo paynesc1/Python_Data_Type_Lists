@@ -172,9 +172,11 @@ for problem #10
 
 def take_away(list_one):
     print(list_one)
-    if len(list_one) >= 6:
-        list_one.remove(list_one[0])
-        list_one.remove(list_one[4-1])
-        list_one.remove(list_one[5-2])
-    print(list_one)
+    indices_to_remove = [0,4,5]
+    filtered_list = []
+    for index, i in enumerate(list_one):
+        if index not in indices_to_remove:
+            filtered_list.append(i)
+
+    print(filtered_list)
 take_away(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
