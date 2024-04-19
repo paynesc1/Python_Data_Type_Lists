@@ -3,16 +3,16 @@ import random
 """
 generates a random list of numbers
 """
-# def randoms():
-#     # make list n long, must be at least digits ling
-#     my_num = random.randint(1,20)
-#     rand_list = []
-#     for i in range(my_num):
-#         # items in list randonly chosen between 1-5
-#         n = random.randint(1,5)
-#         rand_list.append(n)
-#     return rand_list
-# result = randoms()
+def randoms():
+    # make list n long, must be at least digits ling
+    my_num = random.randint(1,20)
+    rand_list = []
+    for i in range(my_num):
+        # items in list randonly chosen between 1-5
+        n = random.randint(1,5)
+        rand_list.append(n)
+    return rand_list
+result = randoms()
 # print(result)
 
 
@@ -20,11 +20,11 @@ generates a random list of numbers
 generates a random integer
 for problem #10
 """
-def random_int():
-    number = random.randint(1,15)
-    return number
-random_integer = random_int()
-# print(random_integer)
+# def random_int():
+#     number = random.randint(1,15)
+#     return number
+# random_integer = random_int()
+# # print(random_integer)
 
 
 
@@ -153,3 +153,19 @@ random_integer = random_int()
 #         return fhand.readlines()
         
 # longer_words(random_integer, get_text())
+
+
+# 11. Write a Python function that takes two lists and returns True if they have at least one common member.
+def common_lists(list_one, list_two):
+    print(list_one)
+    print(list_two)
+    #iterate over one list, if i in the other list return True
+    for i in list_one:
+        if i in list_two:
+            print("True")
+            return True
+    print("False")
+    return False
+    
+# common_lists(randoms(), randoms())
+common_lists([1,2,3],[1,5,6])
