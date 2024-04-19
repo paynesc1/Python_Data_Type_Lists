@@ -30,3 +30,9 @@ Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 7. Write a Python program to remove duplicates from a list.
 
 8. Write a Python program to check if a list is empty or not.
+
+9. Write a Python program to clone or copy a list.
+
+10. Write a Python program to find the list of words that are longer than n from a given list of words.
+
+11. Write a Python function that takes two lists and returns True if they have at least one common member.
