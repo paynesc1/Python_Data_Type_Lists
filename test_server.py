@@ -98,8 +98,10 @@ from server import randoms, common_lists
 def common_lists_test():
     test_cases = [
         ([1,2,3],[4,5,6], False),
-        ([1],[9,8,7,6,5,4,3,2,1], True)
+        ([1,2],[9,8,7,6,5,4,3,2,1], True)
     ]
     for input_list_one, input_list_two, expected in test_cases:
         result = common_lists(input_list_one, input_list_two)
-        assert result == expected, "Lists return expected correctly."
+        assert result == expected, f"Test with lists {input_list_one} and {input_list_two} failed. Expected {expected}, got {result}."
+    print("All tets passed successfully!")
+common_lists_test()
