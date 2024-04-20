@@ -3,17 +3,17 @@ import random
 """
 generates a random list of numbers
 """
-def randoms():
-    # make list n long, must be at least digits ling
-    my_num = random.randint(1,20)
-    rand_list = []
-    for i in range(my_num):
-        # items in list randonly chosen between 1-5
-        n = random.randint(1,5)
-        rand_list.append(n)
-    return rand_list
-result = randoms()
-# print(result)
+# def randoms():
+#     # make list n long, must be at least digits ling
+#     my_num = random.randint(1,20)
+#     rand_list = []
+#     for i in range(my_num):
+#         # items in list randonly chosen between 1-5
+#         n = random.randint(1,5)
+#         rand_list.append(n)
+#     return rand_list
+# result = randoms()
+# # print(result)
 
 
 """
@@ -201,9 +201,21 @@ for problem #10
 
 
 # 15. Write a Python program to shuffle and print a specified list.
-def shuffle_list(my_list):
-    print(my_list)
-    (random.shuffle(my_list))
-    print(my_list)
+# def shuffle_list(my_list):
+#     print(my_list)
+#     (random.shuffle(my_list))
+#     print(my_list)
+# shuffle_list(result)
 
-shuffle_list(result)
+
+# 16. Write a Python program to generate and print a list of the first and last 5 elements where the values are square numbers between 1 and 30 (both included).
+
+def first_and_last():
+    # create new list
+    new_list = []
+    # create ist 1-20
+    for i in range(1, 21):
+        new_list.append(i**2)
+    print(new_list[:5])
+    print(new_list[-5:])
+first_and_last()
