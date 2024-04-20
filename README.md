@@ -40,3 +40,9 @@ Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 12. Write a Python program to print a specified list after removing the 0th, 4th and 5th elements.
 Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 Expected Output : ['Green', 'White', 'Black']
+
+13. Write a Python program to generate a 3*4*6 3D array whose each element is *.
+
+14. Write a Python program to print the numbers of a specified list after removing even numbers from it.
+
+15. Write a Python program to shuffle and print a specified list.
