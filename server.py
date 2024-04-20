@@ -190,12 +190,20 @@ for problem #10
 
 
 # 14. Write a Python program to print the numbers of a specified list after removing even numbers from it.
-def no_evens(my_list):
-    odd_list = []
-    # print(my_list)
-    for i in my_list:
-        if i % 2 == 1:
-            odd_list.append(i)
-    return odd_list
-no_evens(result)
+# def no_evens(my_list):
+#     odd_list = []
+#     # print(my_list)
+#     for i in my_list:
+#         if i % 2 == 1:
+#             odd_list.append(i)
+#     return odd_list
+# no_evens(result)
 
+
+# 15. Write a Python program to shuffle and print a specified list.
+def shuffle_list(my_list):
+    print(my_list)
+    (random.shuffle(my_list))
+    print(my_list)
+
+shuffle_list(result)
