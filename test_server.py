@@ -2,7 +2,7 @@
 """
     depending on the function being checked import that function below
 """
-from server import randoms, common_lists
+from server import randoms, no_evens
 
 
 
@@ -95,13 +95,23 @@ from server import randoms, common_lists
 # ***************************************** #
 
 # 11. Check if one list has at least one element common to second list
-def common_lists_test():
+# def common_lists_test():
+#     test_cases = [
+#         ([1,2,3],[4,5,6], False),
+#         ([1,2],[9,8,7,6,5,4,3,2,1], True)
+#     ]
+#     for input_list_one, input_list_two, expected in test_cases:
+#         result = common_lists(input_list_one, input_list_two)
+#         assert result == expected, f"Test with lists {input_list_one} and {input_list_two} failed. Expected {expected}, got {result}."
+#     print("All tets passed successfully!")
+# common_lists_test()
+
+# ***************************************** #
+
+# 14. Check if odd_list returns True
+def no_evens_test():
     test_cases = [
-        ([1,2,3],[4,5,6], False),
-        ([1,2],[9,8,7,6,5,4,3,2,1], True)
+        ([3, 2, 2, 3, 5, 2, 3, 2, 1, 5, 1, 3, 2, 1, 4, 2, 3], [3,3,5,3,1,5,1,3,1,3])
     ]
-    for input_list_one, input_list_two, expected in test_cases:
-        result = common_lists(input_list_one, input_list_two)
-        assert result == expected, f"Test with lists {input_list_one} and {input_list_two} failed. Expected {expected}, got {result}."
-    print("All tets passed successfully!")
-common_lists_test()
+    for input_list, expected in test_cases:
+        assert no_evens(input_list) == expected, f"String with list {input_list} returns {expected}, or True!"

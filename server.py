@@ -170,13 +170,32 @@ for problem #10
 # Sample List : ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 # Expected Output : ['Green', 'White', 'Black']
 
-def take_away(list_one):
-    print(list_one)
-    indices_to_remove = [0,4,5]
-    filtered_list = []
-    for index, i in enumerate(list_one):
-        if index not in indices_to_remove:
-            filtered_list.append(i)
+# def take_away(list_one):
+#     print(list_one)
+#     indices_to_remove = [0,4,5]
+#     filtered_list = []
+#     for index, i in enumerate(list_one):
+#         if index not in indices_to_remove:
+#             filtered_list.append(i)
 
-    print(filtered_list)
-take_away(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
+#     print(filtered_list)
+# take_away(['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow'])
+
+
+
+# 13. Write a Python program to generate a 3*4*6 3D array whose each element is *.
+# def my_array():
+    
+# my_array()
+
+
+# 14. Write a Python program to print the numbers of a specified list after removing even numbers from it.
+def no_evens(my_list):
+    odd_list = []
+    # print(my_list)
+    for i in my_list:
+        if i % 2 == 1:
+            odd_list.append(i)
+    return odd_list
+no_evens(result)
+
