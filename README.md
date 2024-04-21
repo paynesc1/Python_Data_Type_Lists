@@ -48,3 +48,7 @@ Expected Output : ['Green', 'White', 'Black']
 15. Write a Python program to shuffle and print a specified list.
 
 16. Write a Python program to generate and print a list of the first and last 5 elements where the values are square numbers between 1 and 30 (both included).
+
+17. Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are prime otherwise False.
+
+18. Write a Python program to generate all permutations of a list in Python.
