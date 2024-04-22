@@ -12,19 +12,19 @@ def randoms():
         n = random.randint(1,5)
         rand_list.append(n)
     return rand_list
-# result = randoms()
+result = randoms()
 # print(result)
 
 
 """
 generates a random integer
-for problem #10
+for problem #10, #20
 """
-# def random_int():
-#     number = random.randint(1,15)
-#     return number
-# random_integer = random_int()
-# # print(random_integer)
+def random_int():
+    number = random.randint(1,15)
+    return number
+random_integer = random_int()
+# print(random_integer)
 
 
 
@@ -238,14 +238,24 @@ for problem #10
 
 
 # 19. Write a Python program to calculate the difference between the two lists.
-def difference(list_one, list_two):
-    print(list_one)
-    print(list_two)
-    sum_one = 0
-    sum_two = 0
-    for i in list_one:
-        sum_one += i
-    for j in list_two:
-        sum_two += j
-    print(sum_one - sum_two)
-difference(randoms(), randoms())
+# def difference(list_one, list_two):
+#     print(list_one)
+#     print(list_two)
+#     sum_one = 0
+#     sum_two = 0
+#     for i in list_one:
+#         sum_one += i
+#     for j in list_two:
+#         sum_two += j
+#     print(sum_one - sum_two)
+# difference(randoms(), randoms())
+
+# 20. Write a Python program to access the index of a list.
+def list_index(my_list, random_integer):
+    print(my_list)
+    print(random_integer)
+    if random_integer > len(my_list):
+        print("List not long enough , try again!")
+    else:
+        print(f"List index is: {my_list[random_integer]}")
+list_index(result, random_integer)
