@@ -12,7 +12,7 @@ def randoms():
         n = random.randint(1,5)
         rand_list.append(n)
     return rand_list
-result = randoms()
+# result = randoms()
 # print(result)
 
 
@@ -227,11 +227,25 @@ for problem #10
 # prime_check(result)
 
 # 18. Write a Python program to generate all permutations of a list in Python.
-from itertools import permutations
-def something(iterable):
-    print(iterable)
-    perm = permutations(iterable)
-    for i in list(perm):
-        print(i)
+# from itertools import permutations
+# def something(iterable):
+#     print(iterable)
+#     perm = permutations(iterable)
+#     for i in list(perm):
+#         print(i)
     
-something([1,2,3])
+# something([1,2,3])
+
+
+# 19. Write a Python program to calculate the difference between the two lists.
+def difference(list_one, list_two):
+    print(list_one)
+    print(list_two)
+    sum_one = 0
+    sum_two = 0
+    for i in list_one:
+        sum_one += i
+    for j in list_two:
+        sum_two += j
+    print(sum_one - sum_two)
+difference(randoms(), randoms())
