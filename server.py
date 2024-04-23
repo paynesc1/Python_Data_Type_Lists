@@ -29,26 +29,27 @@ random_integer = random_int()
 
 
 # # 1. Write a Python program to sum all the items in a list.
-# def sum(list):
+# def sum(my_list):
 #     sum = 0
-#     for i in list:
+#     print(my_list)
+#     for i in my_list:
 #         sum += i
 #     return sum
 # print(sum(result))
 
 # 2. Write a Python program to multiply all the items in a list.
-# def multiply(list):
+# def multiply(my_list):
 #     total = 1
-#     for i in list:
+#     for i in my_list:
 #         total *= i
 #     return total
 # print(multiply(result))
 
 
 # 3. Write a Python program to get the largest number from a list.
-# def largest(list):
+# def largest(my_list):
 #     largest_num = None
-#     for i in list:
+#     for i in my_list:
 #         if largest_num == None or i > largest_num:
 #             largest_num = i
 #     return largest_num
@@ -56,9 +57,9 @@ random_integer = random_int()
 
 
 # 4. Write a Python program to get the smallest number from a list.
-# def smallest(list):
+# def smallest(my_list):
 #     smallest = None
-#     for i in list:
+#     for i in my_list:
 #         if smallest == None or i < smallest:
 #             smallest = i
 #     return smallest
@@ -69,9 +70,9 @@ random_integer = random_int()
 # Sample List : ['abc', 'xyz', 'aba', '1221']
 # Expected Result : 2
 
-# def count_strings(list):
+# def count_strings(my_list):
 #     count = 0
-#     for word in list:
+#     for word in my_list:
 #         if len(word) > 1 and word[0] == word[-1]:
 #             count += 1
 #     return count
@@ -85,18 +86,18 @@ random_integer = random_int()
 # def last(n):
 #     return n[-1]
 
-# def get_list(list):
-#     sorted_list = sorted(list, key=last)
+# def get_list(my_list):
+#     sorted_list = sorted(my_list, key=last)
 #     return sorted_list
 # print(get_list([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
 
 
 
 # 7. Write a Python program to remove duplicates from a list.
-# def duplicates(list):
+# def duplicates(my_list):
 #     # create empty list of duplicates
 #     dup = []
-#     for i in list:
+#     for i in my_list:
 #         print(i)
 #         if i not in dup:
 #             dup.append(i)
@@ -108,8 +109,8 @@ random_integer = random_int()
 
 
 # 8. Write a Python program to check if a list is empty or not.
-# def empty_list(list):
-#     if len(list) == 0:
+# def empty_list(my_list):
+#     if len(my_list) == 0:
 #         return "List is empty"
 #     else:
 #         return "List is not empty"
@@ -251,11 +252,11 @@ random_integer = random_int()
 # difference(randoms(), randoms())
 
 # 20. Write a Python program to access the index of a list.
-def list_index(my_list, random_integer):
-    print(my_list)
-    print(random_integer)
-    if random_integer > len(my_list):
-        print("List not long enough , try again!")
-    else:
-        print(f"List index is: {my_list[random_integer]}")
-list_index(result, random_integer)
+# def list_index(my_list, random_integer):
+#     print(my_list)
+#     print(random_integer)
+#     if random_integer > len(my_list):
+#         print("List not long enough , try again!")
+#     else:
+#         print(f"List index is: {my_list[random_integer]}")
+# list_index(result, random_integer)
