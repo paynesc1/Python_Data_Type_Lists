@@ -2,7 +2,7 @@
 """
     depending on the function being checked import that function below
 """
-from server import randoms, no_evens
+from server import randoms, multiply
 
 
 
@@ -109,9 +109,19 @@ from server import randoms, no_evens
 # ***************************************** #
 
 # 14. Check if odd_list returns True
-def no_evens_test():
-    test_cases = [
-        ([3, 2, 2, 3, 5, 2, 3, 2, 1, 5, 1, 3, 2, 1, 4, 2, 3], [3,3,5,3,1,5,1,3,1,3])
-    ]
-    for input_list, expected in test_cases:
-        assert no_evens(input_list) == expected, f"String with list {input_list} returns {expected}, or True!"
+# def no_evens_test():
+#     test_cases = [
+#         ([3, 2, 2, 3, 5, 2, 3, 2, 1, 5, 1, 3, 2, 1, 4, 2, 3], [3,3,5,3,1,5,1,3,1,3])
+#     ]
+#     for input_list, expected in test_cases:
+#         assert no_evens(input_list) == expected, f"String with list {input_list} returns {expected}, or True!"
+
+
+# ***************************************** #
+
+
+# 25. Write a Python program to select an item randomly from a list.
+# def select_random_test():
+#     test_cases = [
+#         ([5, 4, 1], 5)
+#     ]
