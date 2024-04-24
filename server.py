@@ -252,11 +252,77 @@ random_integer = random_int()
 # difference(randoms(), randoms())
 
 # 20. Write a Python program to access the index of a list.
+# def list_index(my_list):
+#     print(my_list)
+#     count = 0
+#     for i in my_list:
+#         print(count, i)
+#         count += 1
+# list_index(result)
+
+
+# 21. Write a Python program to convert a list of characters into a string.
+# def string_list(my_list):
+#     print(my_list)
+#     my_string = [str(i) for i in my_list]
+#     my_string_new = "".join(my_string)
+#     print(my_string_new)
+#     print(type(my_string_new))
+# print(string_list(result))
+
+
+
+# 22. Write a Python program to find the index of an item in a specified list.
 # def list_index(my_list, random_integer):
 #     print(my_list)
 #     print(random_integer)
 #     if random_integer > len(my_list):
 #         print("List not long enough , try again!")
 #     else:
-#         print(f"List index is: {my_list[random_integer]}")
+#         print(f"List index value is: {my_list[random_integer]}")
 # list_index(result, random_integer)
+
+
+
+# 23. Write a Python program to flatten a shallow list.
+
+# 24. Write a Python program to append a list to the second list.
+# def append_lists(my_list_one, my_list_two):
+#     print(my_list_one)
+#     print(my_list_two)
+#     new_list = my_list_one + my_list_two
+#     return (f"Both lists appended: {new_list}")
+# print(append_lists(randoms(), randoms()))
+
+# 25. Write a Python program to select an item randomly from a list.
+# def select_random(my_list):
+#     print(my_list)
+#     num = random.randint(0, len(my_list)-1)
+#     print(num)
+#     return my_list[num]
+# print(select_random(result))
+
+
+# 26. Write a Python program to check whether two lists are circularly identical.
+
+
+# 27. Write a Python program to find the second smallest number in a list.
+# def second_smallest(my_list):
+#     print(my_list)
+#     smallest = None
+#     for i in my_list:
+#         if smallest == None or i < smallest:
+#             smallest = i
+#     return smallest
+# print(second_smallest(result))
+
+
+# 28. Write a Python program to find the second largest number in a list.
+def second_smallest(my_list):
+    # set variables
+    smallest = None
+    next_smallest = None
+    print(my_list)
+print(second_smallest(result))
+
+
