@@ -52,3 +52,8 @@ Expected Output : ['Green', 'White', 'Black']
 17. Write a Python program to check if each number is prime in a given list of numbers. Return True if all numbers are prime otherwise False.
 
 18. Write a Python program to generate all permutations of a list in Python.
+
+19. Write a Python program to calculate the difference between the two lists.
+
+
+27. Write a  Python program to find the second smallest number in a list.
