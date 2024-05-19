@@ -306,23 +306,54 @@ random_integer = random_int()
 # 26. Write a Python program to check whether two lists are circularly identical.
 
 
-# 27. Write a Python program to find the second smallest number in a list.
+# # 27. Write a Python program to find the second smallest number in a list.
 # def second_smallest(my_list):
 #     print(my_list)
-#     smallest = None
+#     # check that list is not less than 2
+#     if len(my_list) < 2:
+#         return
+    
+#     # check that a list lenght equal to 2, both values are not the same
+#     if len(my_list) == 2 and my_list[0] == my_list[1]:
+#         return
+#     # define variables, don't want repeated values, trim list
+#     dup_vals = []
+#     unique_vals = []
+
 #     for i in my_list:
-#         if smallest == None or i < smallest:
-#             smallest = i
-#     return smallest
+#         if i not in dup_vals:
+#             unique_vals.append(i)
+#             dup_vals.append(i)
+
+#     unique_vals.sort()
+#     print(unique_vals)
+#     print(f"The smallest number is {unique_vals[0]}")
+#     print(f"The second smallest number is {unique_vals[1]}")
+#     return unique_vals[1]
 # print(second_smallest(result))
 
 
 # 28. Write a Python program to find the second largest number in a list.
-def second_smallest(my_list):
-    # set variables
-    smallest = None
-    next_smallest = None
-    print(my_list)
-print(second_smallest(result))
+# def second_largest(my_list):
+#     # check list length
+#     if len(my_list) < 2:
+#         return
+    
+#     # check is list length is equal to two and both #'s are the same
+#     if len(my_list) ==2 and my_list[0] == my_list[1]:
+#         return
+
+#     # set variables
+#     dup_items = []
+#     unique_items = []
+#     print(my_list)
+#     for i in my_list:
+#         if i not in dup_items:
+#             unique_items.append(i)
+#             dup_items.append(i)
+#     unique_items.sort()
+#     print(unique_items)
+#     return unique_items[-2]
+# print(second_largest(result))
 
 
