@@ -57,3 +57,5 @@ Expected Output : ['Green', 'White', 'Black']
 
 
 27. Write a  Python program to find the second smallest number in a list.
+
+28. Write a Python program to find the second largest number in a list.
